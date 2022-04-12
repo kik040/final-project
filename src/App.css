@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  outline: none;
+  background-color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+.start {
+  background-color: #cf5291;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 15px 90px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 2px;
+}
+.button {
+  background-color: #cf5291;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.table1 {
+  display: flex;
+  justify-content: center;
+}
+/* showtimeหน้าAdd Activity */
+.showtime {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: aliceblue;
+}
+/* ในหน้าAdd Activity */
+.duration {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  color: aliceblue;
+}
+
+
+.input {
+  margin: 10px;
+  border: 1px solid rgb(191, 80, 255);
+  padding: 5px;
+  border-radius: 30px;
+  color: antiquewhite;
+
+}
+
+.date {
+  color: rgb(150, 150, 150);
+  border: 1px solid rgb(191, 80, 255);
+  border-radius: 50px;
+  padding: 5px;
+  margin: 1px;
+}
+.input-fields1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: auto 350px;
+  align-items: center;
+}
+.start_stop_time {
+  padding: 5px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 68%;
+}

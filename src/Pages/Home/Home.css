@@ -1,0 +1,233 @@
+.record-box-main {
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 25px;
+    flex-direction: column;
+    /* background-color: #f891cd; */
+
+
+}
+
+.userAndAddTop {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    height: 590px;
+
+
+}
+
+/* ตรงrecord */
+.BoxDown {
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    /* background-image: linear-gradient(to top, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52)); */
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+    overflow-y: scroll;
+
+}
+.BoxDown::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+
+
+/* box left Profile*/
+.profile{
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    /* background-image: linear-gradient(to bottom, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52)); */
+
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+.pro-pic {
+    margin-bottom: 5px;
+}
+.data-profile {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.data-profile-user {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 10px 8px;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+    margin-bottom: 5px;
+}
+
+
+
+
+/* box right */
+.box-right {
+    width: 69%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    /* background-image: linear-gradient(to bottom, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52)); */
+
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+.btn-right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.data-result {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 7px;
+    padding: 10px 8px;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+
+
+
+
+
+.top-plus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+
+
+.data-activity {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-bottom: 7px;
+    padding: 10px 8px;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+
+}
+
+
+.data-activity-user {
+    border: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #787878;
+    backdrop-filter: blur(30px);
+    
+}
+
+
+.button-switch-mode{
+
+    /* flex-direction: row-reverse; */
+    background-color: rgb(243, 82, 157);
+      border: none;
+      border-radius: 40px;
+      color: rgb(100, 8, 57);
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      box-shadow:2px 3px 4px rgb(156, 39, 62);
+      cursor: pointer;
+  }
+  .button-switch-mode:hover{
+    background: rgb(231, 68, 155);
+    color: #fff;
+    box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055)
+  }
+
+
+
+
+
+
+.edit-profile {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20px;
+    font-size: 15px;
+    width: 100%;
+    transition: background 1s;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #c84ba1a7;
+    border-radius: 10px;
+    color: rgb(180, 34, 95);
+    margin-top: 15px;
+    box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
+}
+
+.edit-profile:hover {
+    background-color:#f891cd;
+}
+
+.iconModal{
+    cursor: pointer;
+}
+
+.colorFontAS{
+    color:red;
+}
+
+
+@media (max-width: 800px) {
+    .userAndAddTop{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+}

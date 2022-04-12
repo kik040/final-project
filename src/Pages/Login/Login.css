@@ -1,0 +1,83 @@
+
+.login-page {
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(to right, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    margin-top: 5%;
+    text-shadow: 2px 1px 4px #ffffffd7;
+    box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055);
+}
+
+.picture-login {
+    width: 150px;
+}
+
+.form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.form-group input {
+    margin-top: 6px;
+    min-width: 18em;
+    height: 35px;
+    padding: 0px 10px;
+    background-color: #e18cf6f6;
+    color: rgb(66, 66, 66);
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+    
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 1px #ff90f9b2;
+  }
+
+.btn {
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #de8feebd;
+    border-radius: 10px;
+    color: azure;
+    margin-top: 15px;
+    box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
+        
+}
+
+.btn:hover {
+    background: rgb(255, 117, 243);
+    color: #fff;
+    box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055)
+}
+
+.click-signup {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.button-signup {
+    font-size: 14px;
+    text-decoration: none;
+    
+}

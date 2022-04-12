@@ -1,0 +1,55 @@
+.typeInput {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-actType {
+    display: flex;
+    align-items: center;
+}
+
+.typeInput input {
+    /* border: none; */
+    border-radius: 7px;
+    color: #E4AEC5;
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+    text-align: center;
+    border-color: cornsilk;
+
+}
+.typeInput input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 1px #be1268fa;
+}
+
+/* date */
+.typeInput .form-date input {
+    color-scheme: dark;
+}
+
+
+.typeInput textarea {
+    /* border: none; */
+    border-radius: 7px;
+    min-width: 18em;
+    color: #E4AEC5;
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+    border-color: cornsilk;
+}
+
+.typeInput textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 1px #be1268fa;
+}
+
+.typeInput label {
+    font-size: 20px;
+}
+
+#duration {
+    font-size: 30px
+}
+
