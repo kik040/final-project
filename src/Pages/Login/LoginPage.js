@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import './Login.css';
 
@@ -18,10 +19,12 @@ const LoginPage = () => {
       withCredentials: true,
       url: "http://localhost:4000/users/login",
     }).then((res) => {console.log(res)
-                      navigate("/");});
+                      navigate("/home");});
+
   };
   return (
-    <div className="container login-page">
+    <div className='login-box-main'> 
+    <div className="login-page">
       {/* logo */}
       <div>
       <img src={require("../../image/group2.png")} alt='logo-login' className='picture-login'/>
@@ -42,7 +45,8 @@ const LoginPage = () => {
       </div>
       <div className='click-signup'>
       <p>You don't have an account ? </p>
-      <p className='button-signup'>&nbsp;&nbsp;SignUp </p>
+      {/* <p className='button-signup'>&nbsp;&nbsp;SignUp </p> */}
+      <label><Link className='button-signup' to="/register">Register</Link></label>
       </div>
       
 
@@ -52,6 +56,7 @@ const LoginPage = () => {
         Login
       </button>
       
+    </div>
     </div>
   )
 }

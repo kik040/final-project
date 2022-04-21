@@ -10,9 +10,10 @@ function Form(props) {
     const date =new Date()
     const arrayDate = date.toLocaleDateString().split('/')
     const sufferDate = [arrayDate[2]-543, 
-                        (arrayDate[0] < 10 ? '0' : '') + arrayDate[1], 
-                        (arrayDate[1] < 10 ? '0' : '') + arrayDate[0],]
+                        (arrayDate[1] < 10 ? '0' : '') + arrayDate[1], 
+                        (arrayDate[0] < 10 ? '0' : '') + arrayDate[0],]          
     const todayDate = sufferDate.join('-')
+
     
     
     const handleSubmit = async(event) => {
@@ -20,7 +21,6 @@ function Form(props) {
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
         const second= hr+mn;
-        console.log(second);
         // store the states in the form data
         Axios({
           method: "POST",
@@ -41,25 +41,9 @@ function Form(props) {
           }, (error) => {
             console.log(error);
           });
-
           return;
-
       }
-      // const register = () => {
-      //   axios({
-      //     method: "POST",
-      //     data: {
-      //       activityName: props.form.actTypes,
-      //       timestamp: props.form.date,
-      //       duration: second,
-      //       calories: props.form.cal,
-      //       description: props.form.des
-    
-      //     },
-      //     withCredentials: true,
-      //     url: "http://localhost:4000/users/me/records",
-      //   }).then((res) =>{} console.log(res));
-      // };
+
   return (
     <form className='typeInput' onSubmit={handleSubmit}>
         <div className='form-actType'>

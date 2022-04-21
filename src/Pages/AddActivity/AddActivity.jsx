@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import "../App.css";
 import './AddActivity.css'
 import Timer from '../../Components/Timer/Timer';
 import Form from '../../Components/Form/Form';
@@ -9,14 +8,14 @@ import { faClock } from "@fortawesome/free-regular-svg-icons";
 const element = <FontAwesomeIcon icon={faClock} />;
 //  จบส่วนของ Timer
 
-const AddActivity = ({switchPage,setSwitchPage}) => {
+const AddActivity = ({setSwitchPage}) => {
 //  เพิ่มส่วนของType Activity
 const ImagesTypeActivity = [
     {image:require('../../image/running-color.png'),label:'Running'},
     {image:require('../../image/batminton-color.png'),label:'Batminton'},
     {image:require('../../image/bike2-color.png'),label:'Bike'},
     {image:require('../../image/jump-color.png'),label:'Jumping'},
-    {image:require('../../image/swimming-color.png'),label:'Swimming'},
+    {image:require('../../image/swimming.png'),label:'Swimming'},
     {image:require('../../image/walk-color.png'),label:'Walking'},
     {image:require('../../image/weight-color.png'),label:'Weight'},  
   ];
@@ -119,7 +118,7 @@ const Finsih = () => {
           <div className='activityForm'>
             <h2>Your Activity </h2> 
             
-              <Form form={form} setForm={setForm} handleChange={handleChange} switchPage={switchPage} setSwitchPage={setSwitchPage}/>
+              <Form form={form} setForm={setForm} handleChange={handleChange} setSwitchPage={setSwitchPage}/>
             
           </div>
         </div>

@@ -6,6 +6,8 @@ import RecordActivity from '../../Components/RecordActivity/RecordActivity';
 
 const Home = () => {
   const [switchPage, setSwitchPage] = useState(false);
+  const [isUserReload,setIsUserReload] = useState(false);
+
 
   const handleClicked =()=>{
     switchPage ? setSwitchPage(false) : setSwitchPage(true);
@@ -14,12 +16,12 @@ const Home = () => {
   return (
     <div className="record-box-main">
       <div className='userAndAddTop'>
-        <UserProfile />
+        <UserProfile setIsUserReload={setIsUserReload} isUserReload={isUserReload}/>
         <div className='box-right'>
           <div className= 'btn-right'>
             <button className='button-switch-mode' onClick={handleClicked}>{switchPage ? "x" : "+"}</button>
           </div>
-          {switchPage ? <AddActivity switchPage={switchPage} setSwitchPage={setSwitchPage} /> : <RecordActivity />}
+          {switchPage ? <AddActivity  setSwitchPage={setSwitchPage}/> : <RecordActivity setIsUserReload={setIsUserReload} isUserReload={isUserReload}/>}
             
          </div>
       </div>
