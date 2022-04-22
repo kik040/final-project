@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Axios from 'axios';
 import "./ModalEdit.css";
 
-function ModalEdit({ setModalEditOpen , setForm , form , handleChange , isLoading , setIsLoading , deletePost}) {
+function ModalEdit({ setModalEditOpen , form , handleChange , isLoading , setIsLoading , deletePost}) {
   const [showData, setShowData] = useState(true);
   const [showBtnSubmit, setShowBtnSubmit] = useState(false);
   const date =new Date()

@@ -1,4 +1,3 @@
-import { faRunning } from "@fortawesome/free-solid-svg-icons";
 import React,{useState,useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faSquarePen,faTrashCan} from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +7,7 @@ import Axios from 'axios';
 
 
 
-function RecordActivity({setIsUserReload ,isUserReload}) {
+function RecordActivity({isUserReload}) {
   const [formRecords,setFormRecords] = useState([]);
   const [modalEditOpen, setModalEditOpen] = useState(false);
   const [isLoading,setIsLoading] = useState(false);

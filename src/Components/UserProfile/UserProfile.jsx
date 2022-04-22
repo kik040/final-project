@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import Axios from 'axios';
 function UserProfile({setIsUserReload ,isUserReload}) {
   let navigate = useNavigate();
@@ -61,8 +61,6 @@ function UserProfile({setIsUserReload ,isUserReload}) {
           console.log(response);
           setShowData(true);
           isUserReload ? setIsUserReload(false) : setIsUserReload(true);
-          // setModalEditOpen(false);
-          // window.location.reload();
         }, (error) => {
           console.log(error);
         });
