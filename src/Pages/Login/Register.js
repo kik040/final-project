@@ -26,7 +26,8 @@ const Register = () => {
       displayName: formRegister.displayName,
     },
     withCredentials: true,
-    url: "http://localhost:4000/users/register",
+    url: "https://final-project-backend-two.vercel.app/users/register",
+    // url: "http://localhost:4000/users/register",
   }).then((res) => {console.log(res)
                      navigate("/");});
   }

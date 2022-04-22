@@ -35,7 +35,8 @@ const handleSubmit = async(event) => {
       description: form.des
     },
     withCredentials: true,
-    url: `http://localhost:4000/users/me/records/${id}`,
+    url: `https://final-project-backend-two.vercel.app/users/me/records/${id}`,
+    // url: `http://localhost:4000/users/me/records/${id}`,
   })
     .then((response) => {
       console.log(response);

@@ -17,7 +17,8 @@ function UserProfile({setIsUserReload ,isUserReload}) {
       Axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:4000/users/me",
+        url: "https://final-project-backend-two.vercel.app/users/me",
+        // url: "http://localhost:4000/users/me",
       }).then((res) => {
         setDataUsers(res.data);
         console.log(res.data);
@@ -55,7 +56,8 @@ function UserProfile({setIsUserReload ,isUserReload}) {
           caloriesGoal: form.calG,
         },
         withCredentials: true,
-        url: `http://localhost:4000/users/edit`,
+        url: `https://final-project-backend-two.vercel.app/users/edit`,
+        // url: `http://localhost:4000/users/edit`,
       })
         .then((response) => {
           console.log(response);
@@ -71,7 +73,8 @@ function UserProfile({setIsUserReload ,isUserReload}) {
     Axios({
       method: "DELETE",
       withCredentials: true,
-      url: "http://localhost:4000/users/logout",
+      url: "https://final-project-backend-two.vercel.app/users/logout",
+      // url: "http://localhost:4000/users/logout",
     });
     setDataUsers(null);
     navigate("/")

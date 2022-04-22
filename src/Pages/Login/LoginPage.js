@@ -17,7 +17,8 @@ const LoginPage = () => {
         password: loginPassword,
       },
       withCredentials: true,
-      url: "http://localhost:4000/users/login",
+      url: "https://final-project-backend-two.vercel.app/users/login",
+      // url: "http://localhost:4000/users/login",
     }).then((res) => {console.log(res)
                       navigate("/home");});
 

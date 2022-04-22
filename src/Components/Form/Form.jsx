@@ -33,7 +33,8 @@ function Form(props) {
     
           },
           withCredentials: true,
-          url: "http://localhost:4000/users/me/records",
+          url: "https://final-project-backend-two.vercel.app/users/me/records",
+          // url: "http://localhost:4000/users/me/records",
         })
           .then((response) => {
             console.log(response);

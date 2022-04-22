@@ -26,7 +26,8 @@ function RecordActivity({isUserReload}) {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:4000/users/me",
+      url: "https://final-project-backend-two.vercel.app/users/me",
+      // url: "http://localhost:4000/users/me",
     }).then((res) => {
       setDataUsers(res.data);
       console.log(res.data);
@@ -37,7 +38,8 @@ function RecordActivity({isUserReload}) {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:4000/users/me/records",
+      url: "https://final-project-backend-two.vercel.app/users/me/records",
+      // url: "http://localhost:4000/users/me/records",
     }).then((res) => {
       setFormRecords(res.data);
       console.log(res.data);
@@ -64,7 +66,8 @@ async function deletePost(id) {
   Axios({
     method: "DELETE",
     withCredentials: true,
-    url: `http://localhost:4000/users/me/records/${id}`,
+    url: `https://final-project-backend-two.vercel.app/users/me/records/${id}`,
+    // url: `http://localhost:4000/users/me/records/${id}`,
   }).then((res) => {console.log(res)
     isLoading ? setIsLoading(false) :setIsLoading(true);
   //  window.location.reload();
