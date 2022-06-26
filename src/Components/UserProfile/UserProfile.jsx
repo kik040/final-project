@@ -110,7 +110,7 @@ function UserProfile({setIsUserReload ,isUserReload}) {
           hr
           </div>
           </div>
-          <div className='data-profile-user color-blue'>
+          <div className='data-profile-user color-yellow'>
           <label>CaloriesGoal</label>
           <div>
           <input type="number" value={dataUsers.caloriesGoal} name="calG" placeholder="Calories Goal" min={0} max={9999999} style={{ display: showData ? "inline" : "none" }} disabled/>
