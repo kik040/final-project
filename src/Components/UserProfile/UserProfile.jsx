@@ -92,17 +92,17 @@ function UserProfile({setIsUserReload ,isUserReload}) {
         {dataUsers ? <p>Welcome Back : <label className='data-profile-name'>{dataUsers.displayName}</label></p> :"Nodata"}
 
           <form onSubmit={handleSubmit}>
-          <div className='data-profile-user'>
+          <div className='data-profile-user color-blue'>
             <label>AboutMe</label>
             <input type="text" value={dataUsers.aboutMe} name="aboutme" placeholder="Aboutme" style={{ display: showData ? "inline" : "none" }} disabled/>
             <input type="text" value={form.aboutme} name="aboutme" placeholder="Aboutme" onChange={handleChange} style={{ display: showData ? "none" : "inline" }}/>
           </div>
-          <div className='data-profile-user'>
+          <div className='data-profile-user color-blue'>
             <label>Favorite</label>
             <input type="text" value={dataUsers.favorite} name="fav" placeholder="Favorite" style={{ display: showData ? "inline" : "none" }} disabled/>
             <input type="text" value={form.fav} name="fav" placeholder="Favorite" onChange={handleChange} style={{ display: showData ? "none" : "inline" }}/>
           </div>
-          <div className='data-profile-user'>
+          <div className='data-profile-user color-pink'>
           <label>DurationGoal</label>
           <div>
           <input type="number" value={dataUsers.durationGoal} name="durationG" placeholder="Duration Goal" min={0} max={9999999} style={{ display: showData ? "inline" : "none" }} disabled/>
@@ -110,7 +110,7 @@ function UserProfile({setIsUserReload ,isUserReload}) {
           hr
           </div>
           </div>
-          <div className='data-profile-user'>
+          <div className='data-profile-user color-blue'>
           <label>CaloriesGoal</label>
           <div>
           <input type="number" value={dataUsers.caloriesGoal} name="calG" placeholder="Calories Goal" min={0} max={9999999} style={{ display: showData ? "inline" : "none" }} disabled/>

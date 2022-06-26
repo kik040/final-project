@@ -82,7 +82,6 @@
 
 .data-profile-user {
     border-radius: 30px;
-    background-color: #F43B86;
     display: flex;
     color: rgb(255, 255, 255);
     padding: 4px 8px;
@@ -92,6 +91,15 @@
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
     margin-bottom: 5px;
     flex-direction: column;
+}
+.color-pink{
+    background-color: #F43B86;
+}
+.color-yellow{
+    background-color: #FFC600;
+}
+.color-blue{
+    background-color: #9DD6DF;
 }
 .data-profile-user input{
     border-radius: 30px;
