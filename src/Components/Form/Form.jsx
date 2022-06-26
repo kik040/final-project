@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import Axios from 'axios';
 import './Form.css'
 
@@ -7,6 +7,8 @@ import './Form.css'
 
 
 function Form(props) {
+    const [formErrors,setformErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
     const date =new Date()
     const arrayDate = date.toLocaleDateString().split('/')
     const sufferDate = [arrayDate[2]-543, 
@@ -14,14 +16,16 @@ function Form(props) {
                         (arrayDate[0] < 10 ? '0' : '') + arrayDate[0],]          
     const todayDate = sufferDate.join('-')
 
-    
-    
-    const handleSubmit = async(event) => {
-        event.preventDefault();
-        const hr = Math.floor(props.form.hr*3600);
-        const mn = Math.floor(props.form.mn*60);
-        const second= hr+mn;
-        // store the states in the form data
+    const validate = (sec) => {
+      const errors ={};
+      if(sec===0){
+        errors.second = "Durations is required!";
+      }
+      return errors;
+    }
+    useEffect(()=>{
+      if(Object.keys(formErrors).length === 0 && isSubmit){
+                  // store the states in the form data
         Axios({
           method: "POST",
           data: {
@@ -44,6 +48,17 @@ function Form(props) {
           });
           return;
       }
+    },[formErrors]);
+
+    
+    const handleSubmit = async(event) => {
+        event.preventDefault();
+        const hr = Math.floor(props.form.hr*3600);
+        const mn = Math.floor(props.form.mn*60);
+        const second= hr+mn;
+        setformErrors(validate(second));
+        setIsSubmit(true);
+      }
 
   return (
     <form className='typeInput' onSubmit={handleSubmit}>
@@ -63,6 +78,7 @@ function Form(props) {
             <input type="number" value={props.form.mn} name="mn" onChange={props.handleChange} min={0} max={59} required></input>
             <label>&nbsp;Minute</label>  
         </div>
+        <div><p>{formErrors.second}</p></div>
         <div>
             <label>Calorie&nbsp;&nbsp;</label>
             <input type="number" value={props.form.cal} name="cal" onChange={props.handleChange} min={0} max={9999}/>
