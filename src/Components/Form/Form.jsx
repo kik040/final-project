@@ -19,11 +19,13 @@ function Form(props) {
     const validate = (sec) => {
       const errors ={};
       if(sec===0){
+        console.log("sec=0");
         errors.second = "Durations is required!";
       }
       return errors;
     }
     useEffect(()=>{
+      console.log(`formError username=${formErrors.second}`);
       if(Object.keys(formErrors).length === 0 && isSubmit){
                   // store the states in the form data
         Axios({
