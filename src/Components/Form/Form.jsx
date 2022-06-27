@@ -15,6 +15,7 @@ function Form(props) {
                         (arrayDate[1] < 10 ? '0' : '') + arrayDate[1], 
                         (arrayDate[0] < 10 ? '0' : '') + arrayDate[0],]          
     const todayDate = sufferDate.join('-')
+    let second ;
 
     const validate = (sec) => {
       console.log(`in validation = ${sec}`);
@@ -55,12 +56,12 @@ function Form(props) {
 
     
     const handleSubmit = (event) => {
-       console.log(`in submit`);
+
         event.preventDefault();
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
-        const second= hr+mn;
-        console.log(`in submit sec = ${second}`);
+        second= hr+mn;
+        console.log(`in submit`);
         setformErrors(validate(second));
         setIsSubmit(true);
       }
@@ -93,7 +94,7 @@ function Form(props) {
             <label >Description: </label> <br/>
             <textarea name="des" cols="20" rows="3" value={props.form.des} onChange={props.handleChange}></textarea>
         </div>
-        <button type="submit" className="button">Add12</button>
+        <button type="submit" className="button">Add</button>
     </form>
   )
 }
