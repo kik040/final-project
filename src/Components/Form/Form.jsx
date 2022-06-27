@@ -31,6 +31,9 @@ function Form(props) {
       console.log(`usereffect second=${second}`);
       if(Object.keys(formErrors).length === 0 && isSubmit){
                   // store the states in the form data
+        const hr = Math.floor(props.form.hr*3600);
+        const mn = Math.floor(props.form.mn*60);
+        const second= hr+mn;
         Axios({
           method: "POST",
           data: {
@@ -61,7 +64,7 @@ function Form(props) {
         event.preventDefault();
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
-        second= hr+mn;
+        const second= hr+mn;
         console.log(`in submit`);
         setformErrors(validate(second));
         setIsSubmit(true);
