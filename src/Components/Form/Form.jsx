@@ -17,6 +17,7 @@ function Form(props) {
     const todayDate = sufferDate.join('-')
 
     const validate = (sec) => {
+      console.log(`in validation = ${sec}`);
       const errors ={};
       if(sec===0){
         console.log("sec=0");
@@ -54,6 +55,7 @@ function Form(props) {
 
     
     const handleSubmit = async(event) => {
+
         event.preventDefault();
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
