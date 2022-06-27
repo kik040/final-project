@@ -60,6 +60,7 @@ function Form(props) {
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
         const second= hr+mn;
+        console.log(`in submit`);
         setformErrors(validate(second));
         setIsSubmit(true);
       }
