@@ -93,7 +93,7 @@ function Form(props) {
             <label >Description: </label> <br/>
             <textarea name="des" cols="20" rows="3" value={props.form.des} onChange={props.handleChange}></textarea>
         </div>
-        <button type="submit" className="button">Add</button>
+        <button type="submit" className="button">Add12</button>
     </form>
   )
 }
