@@ -77,7 +77,7 @@ function Form(props) {
         </div>
         <br/>
         <div>
-            <label id='duration'>Duration</label> <br/>
+            <label id='duration'>Duration12</label> <br/>
             <input type="number" value={props.form.hr} name="hr" onChange={props.handleChange} min={0} max={23} required></input>
             <label>&nbsp;Hour&nbsp;&nbsp;&nbsp;&nbsp;</label> 
             <input type="number" value={props.form.mn} name="mn" onChange={props.handleChange} min={0} max={59} required></input>
