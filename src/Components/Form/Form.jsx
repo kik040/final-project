@@ -55,7 +55,7 @@ function Form(props) {
 
     
     const handleSubmit = (event) => {
-
+       console.log(`in submit`);
         event.preventDefault();
         const hr = Math.floor(props.form.hr*3600);
         const mn = Math.floor(props.form.mn*60);
