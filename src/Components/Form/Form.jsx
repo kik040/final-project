@@ -84,7 +84,7 @@ function Form(props) {
             <input type="number" value={props.form.mn} name="mn" onChange={props.handleChange} min={0} max={59} required></input>
             <label>&nbsp;Minute</label>  
         </div>
-        <div><p>{formErrors.second}</p></div>
+        <div><p style={{color:"red"}}>{formErrors.second}</p></div>
         <div>
             <label>Calorie&nbsp;&nbsp;</label>
             <input type="number" value={props.form.cal} name="cal" onChange={props.handleChange} min={0} max={9999}/>

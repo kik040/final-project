@@ -102,8 +102,8 @@ function UserProfile({setIsUserReload ,isUserReload}) {
             <input type="text" value={dataUsers.favorite} name="fav" placeholder="Favorite" style={{ display: showData ? "inline" : "none" }} disabled/>
             <input type="text" value={form.fav} name="fav" placeholder="Favorite" onChange={handleChange} style={{ display: showData ? "none" : "inline" }}/>
           </div>
-          <div className='data-profile-user color-yellow'>
-          <label>DurationGoal12</label>
+          <div className='data-profile-user color-pink'>
+          <label>DurationGoal</label>
           <div>
           <input type="number" value={dataUsers.durationGoal} name="durationG" placeholder="Duration Goal" min={0} max={9999999} style={{ display: showData ? "inline" : "none" }} disabled/>
           <input type="number" value={form.durationG} name="durationG" placeholder="Duration Goal" min={0} max={9999999} onChange={handleChange} style={{ display: showData ? "none" : "inline" }}/>&nbsp;
